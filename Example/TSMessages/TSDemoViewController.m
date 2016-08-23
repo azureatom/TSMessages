@@ -32,6 +32,11 @@
 
 - (IBAction)didTapWarning:(id)sender
 {
+    [TSMessageView appearance].backgroundColor = [UIColor orangeColor];
+    [TSMessageView appearance].titleTextColor = [UIColor whiteColor];
+    [TSMessageView appearance].contentTextColor = [UIColor whiteColor];
+    [TSMessageView appearance].warningIcon = [UIImage imageNamed:@"NotificationBackgroundSuccessIcon"];
+    
     [TSMessage showNotificationWithTitle:NSLocalizedString(@"Some random warning", nil)
                                 subtitle:NSLocalizedString(@"Look out! Something is happening there!", nil)
                                     type:TSMessageNotificationTypeWarning];

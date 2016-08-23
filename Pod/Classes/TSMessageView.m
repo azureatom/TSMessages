@@ -265,11 +265,11 @@ canBeDismissedByUser:(BOOL)dismissingEnabled
         }
         else
         {
-            // On iOS 7 and above use a blur layer instead (not yet finished)
-            _backgroundBlurView = [[TSBlurView alloc] init];
-            self.backgroundBlurView.autoresizingMask = (UIViewAutoresizingFlexibleWidth);
-            self.backgroundBlurView.blurTintColor = [UIColor colorWithHexString:current[@"backgroundColor"]];
-            [self addSubview:self.backgroundBlurView];
+//            // On iOS 7 and above use a blur layer instead (not yet finished)
+//            _backgroundBlurView = [[TSBlurView alloc] init];
+//            self.backgroundBlurView.autoresizingMask = (UIViewAutoresizingFlexibleWidth);
+//            self.backgroundBlurView.blurTintColor = [UIColor colorWithHexString:current[@"backgroundColor"]];
+//            [self addSubview:self.backgroundBlurView];
         }
 
         UIColor *fontColor = [UIColor colorWithHexString:[current valueForKey:@"textColor"]];
